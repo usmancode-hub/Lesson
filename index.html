@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson</title>
+    <style>
+        .container {
+            width: 80vw;
+            height: 230px;
+            margin: auto;
+            padding: 12px 24px;
+        }
+             .btn{
+                padding: 10px 20px ;
+                border-radius: 20px;
+                border: none;
+                margin: 12px auto;
+             }
+        .box {
+            background-color: rgb(54, 135, 135);
+            width: 80vw;
+            border-radius: 17px;
+            cursor: pointer;
+            padding: 10px 10px;
+        }
+
+        .box3 {
+         background-color: rgb(54, 135, 135);
+            border-radius: 20px;
+            padding: 10px;
+            height: 100px;
+            color: white;}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            MY name usman.. i AM STUDENT
+        </div>
+        <button class="btn">Click Me</button>
+        <div class="box3">This is a simple page where I am learning coding and practicing by hand. I am learning so much here. I get to explore and learn new things every day. Coding truly makes me happy</div>
+    </div>
+    <script>
+        document.body
+        document.querySelector(".container").style.borderRadius="20px"
+        document.querySelector(".container").style.margin="auto"
+        document.querySelector(".box3").style.color="white"
+        function getrandomColor() {
+            let val1 = Math.ceil(0 + Math.random() * 255)
+            let val2 = Math.ceil(0 + Math.random() * 255)
+            let val3 = Math.ceil(0 + Math.random() * 255)
+            return `rgb(${val1},${val2},${val3})`
+        }
+        setInterval(() =>{ 
+            document.querySelector(".container").style.backgroundColor = getrandomColor()
+        },1000)
+          function getrandomColor() {
+            let val1 = Math.ceil(0 + Math.random() * 255)
+            let val2 = Math.ceil(0 + Math.random() *255)
+            let val3 = Math.ceil(0 + Math.random() * 255)
+            return `rgb(${val1},${val2},${val3})`
+        }
+        setInterval(() =>{ 
+            document.querySelector(".box").style.backgroundColor = getrandomColor()
+        },1500)
+          function getrandomColor() {
+            let val1 = Math.ceil(0 + Math.random() * 255)
+            let val2 = Math.ceil(0 + Math.random() * 255)
+            let val3 = Math.ceil(0 + Math.random() * 255)
+            return `rgb(${val1},${val2},${val3})`
+        }
+        setInterval(() =>{ 
+            document.querySelector(".box").style.backgroundColor = getrandomColor()
+        },2000)
+        let boxes=document.querySelector(".btn").addEventListener("click",()=>{
+            alert("Welcome to my page ")
+          document.querySelector(".btn").innerHTML="Welcome back to my page <B>Thank You</b>"
+            document.querySelector(".btn").style.backgroundColor="orange"
+        })
+        let fruits="Banana,Apple,Pineapple,Mango,Orange"
+        for (let i = 1; i <5; i++) {
+            console.log([fruits]);   
+        }
+    </script>
+</body>
